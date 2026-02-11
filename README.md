@@ -1,1 +1,1 @@
-# Simon-AntheaMyles_LW1_Image_Classification
+# Simon-AntheaMyles_LW2_Image_Classification
