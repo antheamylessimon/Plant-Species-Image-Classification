@@ -116,8 +116,8 @@ Famous for its hanging purple flower clusters.
 ---
 
 ## ⚙️ Section C: Model Training Details
-
-* **Epochs:** 50
+![model_trained](images/training/model_trained.png)
+* **Epochs:** 150
 * **Batch Size:** 16
 * **Learning Rate:** 0.001
 * **Images per class:** ~250
@@ -131,15 +131,17 @@ These values were selected to balance training efficiency and model accuracy. In
 
 ### Confusion Matrix
 
-![Confusion Matrix](model_training_details/confusion_matrix.png)
+![Confusion Matrix](images/training/confusion_matrix_1.png)
+![Confusion Matrix](images/training/confusion_matrix_2.png)
+![Confusion Matrix](images/training/confusion_matrix_3.png)
 
 ### Accuracy per Class
 
-![Accuracy per Class](model_training_details/accuracy_per_class.png)
+![Accuracy per Class](images/training/accuracy_per_class.png)
 
 ### Overall Accuracy
 
-The model achieved an overall accuracy of **92%**. <!-- CHANGE THIS -->
+![accuracy_per_epoch](images/training/accuracy_per_epoch.png)
 
 The confusion matrix shows that most bonsai species were correctly classified, although some visually similar species caused minor misclassifications.
 
@@ -149,24 +151,78 @@ The confusion matrix shows that most bonsai species were correctly classified, a
 
 Below are sample test results from the Teachable Machine Preview:
 
-### Test Results
+### Test 1
+![Test 1](images/model_testing/azalea_test.png)
 
-![Test 1](preview_test_images/test1.png)
-![Test 2](preview_test_images/test2.png)
-![Test 3](preview_test_images/test3.png)
-![Test 4](preview_test_images/test4.png)
-![Test 5](preview_test_images/test5.png)
-![Test 6](preview_test_images/test6.png)
-![Test 7](preview_test_images/test7.png)
-![Test 8](preview_test_images/test8.png)
-![Test 9](preview_test_images/test9.png)
-![Test 10](preview_test_images/test10.png)
+### Test 2
+![Test 2](images/model_testing/blueberry_test.png)
 
----
+### Test 3
+![Test 3](images/model_testing/bougainvillea_test.png)
+
+### Test 4
+![Test 4](images/model_testing/chinese_elm_test.png)
+
+### Test 5
+![Test 5](images/model_testing/dwarf_jade_test.png)
+
+### Test 6
+![Test 6](images/model_testing/ginseng_ficus_test.png)
+
+### Test 7
+![Test 7](images/model_testing/hibiscus_test_tree.png)
+
+### Test 8
+![Test 8](images/model_testing/ixora_test.png)
+
+### Test 9
+![Test 9](images/model_testing/japanese_flowering_cherry_test.png)
+
+### Test 10
+![Test 10](images/model_testing/japanese_maple_test.png)
+
+### Test 11
+![Test 11](images/model_testing/juniper_test.png)
+
+### Test 12
+![Test 12](images/model_testing/kingsville_boxwood_test.png)
+
+### Test 13
+![Test 13](images/model_testing/mimosa_test_1.png)
+![Test 13](images/model_testing/mimosa_test_2.png)
+
+### Test 14
+![Test 14](images/model_testing/orange_test_1.png)
+![Test 14](images/model_testing/orange_test_2.png)
+
+
+### Test 15
+![Test 15](images/model_testing/persimmon_test_1.png)
+![Test 15](images/model_testing/persimmon_test_2.png)
+
+### Test 16
+![Test 16](images/model_testing/pine_test_1.png)
+![Test 16](images/model_testing/pine_test_2.png)
+
+### Test 17
+![Test 17](images/model_testing/pomegranate_test_1.png)
+![Test 17](images/model_testing/pomegranate_test_2.png)
+
+### Test 18
+![Test 18](images/model_testing/trident_maple_test_1.png)
+![Test 18](images/model_testing/trident_maple_test_2.png)
+
+### Test 19
+![Test 19](images/model_testing/white_oak_test_1.png)
+![Test 19](images/model_testing/white_oak_test_2.png)
+
+### Test 20
+![Test 20](images/model_testing/wisteria_test_1.png)
+![Test 20](images/model_testing/wisteria_test_2.png)
 
 ## 📦 Model Export
 
-The trained model was exported using TensorFlow format and stored in the [`models/`](./models) folder.
+The trained model was exported using TensorFlow format and stored in the [`models/`](models/converted_keras.zip) folder.
 
 ---
 
