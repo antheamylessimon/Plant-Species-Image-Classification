@@ -222,7 +222,7 @@ Below are sample test results from the Teachable Machine Preview:
 
 ## 📦 Model Export
 
-The trained model was exported using TensorFlow format and stored in the [`models/`](models/converted_keras.zip) folder.
+The trained model was exported using TensorFlow format and stored in the [`models/`](models/) folder.
 
 ---
 
