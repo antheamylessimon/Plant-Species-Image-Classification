@@ -15,102 +15,122 @@ Below are the 20 bonsai species used in this project:
 
 ### 1. Azalea Bonsai
 
-![Azalea](images/azalea.jpg)
+<img src="images/plants/azalea_bonsai/azalea(2).jpg" width="500">
+
 A flowering bonsai known for its vibrant and colorful blooms.
 
 ### 2. Blueberry Bonsai
 
-![Blueberry](images/blueberry.jpg)
+<img src="images/plants/blueberry_bonsai/blueberry(258).jpg" width="500">
+
 A fruit-bearing bonsai that produces small edible blueberries.
 
 ### 3. Bougainvillea Bonsai
 
-![Bougainvillea](images/bougainvillea.jpg)
+<img src="images/plants/bougainvillea_bonsai/bougainvillea(2).jpg" width="500">
+
 A tropical bonsai famous for its bright, paper-like flowers.
 
 ### 4. Chinese Elm Bonsai
 
-![Chinese Elm](images/chinese_elm.jpg)
+<img src="images/plants/chinese_elm_bonsai/chinese_elm(1).jpg" width="500">
+
 A popular beginner bonsai with small leaves and strong adaptability.
 
 ### 5. Dwarf Jade Bonsai
 
-![Dwarf Jade](images/dwarf_jade.jpg)
+<img src="images/plants/dwarf_jade_bonsai/dwarf_jade(1).jpg" width="500">
+
 A succulent bonsai with thick leaves and excellent drought tolerance.
 
 ### 6. Ginseng Ficus Bonsai
 
-![Ginseng Ficus](images/ginseng_ficus.jpg)
+<img src="images/plants/ginseng_ficus_bonsai/ginseng_ficus(1).jpg" width="500">
+
 Recognized for its thick roots and glossy green leaves.
 
 ### 7. Hibiscus Bonsai Tree
 
-![Hibiscus](images/hibiscus.jpg)
+<img src="images/plants/hibiscus_bonsai/hibiscus_bonsai(1).jpg" width="500">
+
 A flowering bonsai with large, vibrant blossoms.
 
 ### 8. Ixora Bonsai
 
-![Ixora](images/ixora.jpg)
+<img src="images/plants/ixora_bonsai/ixora(1).jpg" width="500">
+
 A tropical bonsai known for its clustered small flowers.
 
 ### 9. Japanese Flowering Cherry Bonsai
 
-![Cherry](images/cherry.jpg)
+<img src="images/plants/japanese_flowering_cherry_bonsai/japanese_flowering_cherry(1).jpg" width="500">
+
 Famous for its delicate pink blossoms.
 
 ### 10. Japanese Maple Bonsai
 
-![Maple](images/japanese_maple.jpg)
+<img src="images/plants/japanese_maple_bonsai/japanese_maple(1).jpg" width="500">
+
 Known for its beautiful seasonal leaf color changes.
 
 ### 11. Juniper Bonsai
 
-![Juniper](images/juniper.jpg)
+<img src="images/plants/juniper_bonsai/juniper(1).jpg" width="500">
+
 One of the most common bonsai types with needle-like foliage.
 
 ### 12. Kingsville Boxwood Bonsai
 
-![Boxwood](images/boxwood.jpg)
+<img src="images/plants/kingsville_boxwood_bonsai/kingsville_boxwood(1).jpg" width="500">
+
 A compact bonsai with dense foliage.
 
 ### 13. Mimosa Bonsai
 
-![Mimosa](images/mimosa.jpg)
+<img src="images/plants/mimosa_bonsai/mimosa(1).jpg" width="500">
+
 Known for its sensitive leaves that close when touched.
 
 ### 14. Orange Bonsai
 
-![Orange](images/orange.jpg)
+<img src="images/plants/orange_bonsai/orange(1).jpg" width="500">
+
 A fruit-bearing bonsai producing miniature oranges.
 
 ### 15. Persimmon Bonsai
 
-![Persimmon](images/persimmon.jpg)
+<img src="images/plants/persimmon_bonsai/persimmon(1).jpg" width="500">
+
 Produces small orange fruits and has seasonal leaf changes.
 
 ### 16. Pine Bonsai
 
-![Pine](images/pine.jpg)
+<img src="images/plants/pine_bonsai/pine(1).jpg" width="500">
+
 A classic bonsai with needle-like leaves and rugged form.
 
 ### 17. Pomegranate Bonsai
 
-![Pomegranate](images/pomegranate.jpg)
+<img src="images/plants/pomegranate_bonsai/pomegranate(1).jpg" width="500">
+
 A flowering and fruiting bonsai with bright red blossoms.
 
 ### 18. Trident Maple Bonsai
 
-![Trident Maple](images/trident_maple.jpg)
+<img src="images/plants/trident_maple_bonsai/trident_maple(1).jpg" width="500">
+
 Known for its strong roots and beautiful autumn colors.
 
 ### 19. White Oak Bonsai
 
-![White Oak](images/white_oak.jpg)
+<img src="images/plants/white_oak_bonsai/white_oak(1).webp" width="500">
+
 A sturdy bonsai with lobed leaves and strong trunk.
 
 ### 20. Wisteria Bonsai
 
-![Wisteria](images/wisteria.jpg)
+<img src="images/plants/wisteria_bonsai/wisteria(1).jpg" width="500">
+
 Famous for its hanging purple flower clusters.
 
 ---
@@ -254,30 +274,33 @@ The trained model was exported using TensorFlow format and stored in the [`model
 
   * [`images/`](./images)
   * [`models/`](./models)
-  * [`model_training_details/`](./model_training_details)
-  * [`preview_test_images/`](./preview_test_images)
 
 ---
 
 ## 🧠 Reflection
 
 **1. How did the number of images per class affect your model’s accuracy?**
-Increasing the number of images improved the model’s accuracy and ability to generalize.
-
-**2. Which plant species were most commonly misclassified and why?**
-Species with similar leaf structures, such as maple and trident maple, were sometimes misclassified.
-
-**3. How did changing the parameters affect results?**
-Higher epochs improved accuracy but increased training time. Proper learning rate prevented overfitting.
-
-**4. What challenges did you encounter?**
-Collecting diverse and high-quality images was time-consuming.
-
-**5. What improvements would you make?**
-Adding more images and improving dataset balance would further enhance accuracy.
+  * The number of images per class significantly affected the model’s performance. Classes with more balanced and higher-quality images, such as Ginseng Ficus Bonsai (96%) and Pine Bonsai (84%), achieved higher accuracy. In contrast, classes with fewer or less consistent images, such as Dwarf Jade Bonsai (49%) and Trident Maple Bonsai (42%), showed lower accuracy. This indicates that having more diverse and well-distributed images improves the model’s ability to generalize.
 
 ---
 
-## 👨‍💻 Author
+**2. Which plant species were most commonly misclassified and why?**
+  * Some species were frequently misclassified due to visual similarities in leaf shape and structure. For example, Trident Maple Bonsai (42%) and Dwarf Jade Bonsai (49%) had lower accuracy because their features are similar to other bonsai species. Additionally, White Oak Bonsai (61%) and Azalea Bonsai (64%) also showed confusion with other classes. These misclassifications occurred because the model struggled to distinguish subtle differences between similar-looking plants.
 
-**Anthea Myles A. Simon**
+---
+
+**3. How did changing the epochs, batch size, or learning rate affect the training results?**
+  * Increasing the number of epochs (150) allowed the model to learn more patterns from the dataset, improving accuracy for several classes. The batch size of 16 helped maintain stable training without overwhelming the system. The learning rate of 0.001 ensured gradual learning and prevented the model from overshooting optimal values. Overall, these parameters provided a balance between training time and performance, though further tuning could improve weaker classes.
+
+---
+
+**4. What challenges did you encounter during dataset collection and labeling?**
+  * One of the main challenges was collecting a large number of high-quality images for each plant species. It was difficult to find images with consistent angles, lighting, and clarity. Another challenge was avoiding duplicate or mislabeled images, which could negatively affect model accuracy. Ensuring that each class had balanced and diverse data required significant time and effort.
+
+---
+
+**5. If you were to improve your model, what specific changes would you make and why?**
+  * To improve the model, I would increase the number of images for low-performing classes such as Trident Maple Bonsai and Dwarf Jade Bonsai. I would also ensure better image quality and diversity (different angles, lighting, and backgrounds). Additionally, I would experiment with adjusting training parameters such as increasing epochs further or fine-tuning the learning rate. These improvements would help the model better distinguish between visually similar bonsai species and increase overall accuracy.
+
+---
+
